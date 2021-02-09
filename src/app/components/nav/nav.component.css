@@ -1,0 +1,51 @@
+.nav{
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.logo{
+    width: 70px;
+    max-width: 10%;
+    height: auto;
+    margin: 1rem;
+}
+.nav a {
+    text-decoration: none;
+    color: #F2786D;
+    margin: 1rem;
+}
+.introText{
+    font-weight: 800;
+    font-size: 2rem;
+    text-align-last: auto;
+    color: #424343;
+    padding: 2rem;
+    text-align-last: center;
+}
+.welcome{
+    border: 2px solid green;
+    display: flex;
+    flex-direction: column; 
+    border: solid 2px blue;
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.speciality{
+    display: flex;
+width: 100%;
+border: solid 2px rgb(255, 153, 0);
+}
