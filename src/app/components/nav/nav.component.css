@@ -1,51 +1,261 @@
 .nav{
-    border: 2px solid red;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    /* background-color: blue; */
 }
-.logo{
-    width: 70px;
-    max-width: 10%;
-    height: auto;
-    margin: 1rem;
+.hiddenNav{
+    width:100%;
+    height: 20%;
+    /* background-color: red; */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    transition: 0.3s;
+    animation-name: hiddenNavAnimation;
+     animation-duration: 1s;
+     
+  
 }
-.nav a {
+@keyframes hiddenNavAnimation {
+    0%   {transform: translateY(-15%);}
+    /* 25%  {transform: translateY(-10%);} */
+    50%  {transform: translateY(20%);}
+    /* 75%  {transform: translateY(-5%);} */
+    100% {transform: translateY(-5%);}
+  }
+.hide{
+    display: none;
+    /* transition: 10s; */
+}
+.hiddenContact{
     text-decoration: none;
     color: #F2786D;
+    font-size: 1.2rem;
+    border: 2px solid #F2786D;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    /* display: none; */
+
+}
+.menu{
+    width:4rem;
+    min-width: 2rem;
+    background-color: red;
+    display: none;
+    padding: 1rem;
     margin: 1rem;
 }
+
+.logo{
+    width: 70px;
+    max-width: 13%;
+    height: auto;
+    /* margin: 1rem; */
+    margin-left: 15%;
+    padding: auto;
+    /* background-color: red; */
+}
+
 .introText{
     font-weight: 800;
     font-size: 2rem;
-    text-align-last: auto;
     color: #424343;
     padding: 2rem;
-    text-align-last: center;
-}
-.welcome{
-    border: 2px solid green;
-    display: flex;
-    flex-direction: column; 
-    border: solid 2px blue;
+    text-align: center;
     margin-top: 3rem;
-    width: 100%;
+}
+.burger{
+    /* padding: 1rem; */
+    display: none;
+    margin: 2rem;
+}
+.hamburger{
+    outline: none;
+
+}
+.burger:hover{
+    opacity: 0.6;
+}
+
+.line{
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    /* border-bottom: 1px solid black;
+    display: block;
+    height: 1rem; */
+    border-radius: 10rem;
+}
+.icon{
+    width: 70px;
+    max-width: 10%;
+    height: auto;
+    margin-top: 5%;
+}
+.specialityTitle{
+    margin-bottom: 1rem;
+}
+
+
+.contact {
+    text-decoration: none;
+    color: #F2786D;
+    font-size: 1.2rem;
+    border: 2px solid #F2786D;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    /* margin: 1rem; */
+    margin-right: 15%;
+}
+.contact:hover , .hiddenContact:hover {
+    color: white;
+    background-color:#F2786D ;
+    transition: 0.4s;
+}
+.nav-item{
+    margin-top: 1.3rem;
+    /* padding: 1rem; */
 }
 
 .card{
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   transition: 0.3s;
   display: flex;
   flex-direction: column;
   flex: 1;
   align-items: center;
+  /* justify-content: center; */
+  border-right: 1px solid  rgba(0,0,0,0.1);
+  padding: 1rem;
+  margin: 1rem;
+  padding-bottom: 2rem;
 }
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+.designCard{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    /* border-right: 1px solid  rgba(0,0,0,0.1); */
+    /* padding: 1rem; */
+    margin: 1rem;
+    /* padding-bottom: 2rem; */
+    /* width: 300px; */
+    width:20%;
+    max-width: 300px;
+    min-width: 250px;
+    height: auto;
+    min-height: 100px;
+    /* border-collapse: separate;  */
+    /* border-radius: 0.5rem; */
+   
+    /* overflow: hidden; */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+}
+.designTitle{
+    
+}
+.designCard img {
+    width: 100%;
+}
+.designs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center ;
+    text-align: center;    
+/* padding: 2rem; */
+    /* background-color: aqua; */
+    width: 100%;
+    /* padding: 3rem; */
+    /* margin: 1rem; */
+}
+.smallCard{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    margin: 1rem;
+    padding: 1rem;
+    /* flex: 1; */
+    height: 90%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    /* background-color: green; */
+    text-align: center;
+    width: 100%;
+}
+.smallCardContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: green; */
+    width: 100%;
+
+    
+}
+.card img {
+    margin-bottom: 2rem;
+    min-width: 3rem;
+}
+.designCard:hover {
+    
+
+}
+.card:hover, .smallCard:hover , .designCard:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 .speciality{
     display: flex;
 width: 100%;
-border: solid 2px rgb(255, 153, 0);
+/* border: solid 2px rgb(255, 153, 0); */
+}
+h3{
+    font-weight: 800;
+}
+p{
+    font-size: 1.2rem;
+    
+}
+
+
+@media  (max-width: 700px) {
+    .speciality{
+        flex-direction: column;
+    }
+    .smallCardContainer{
+        flex-direction: column;
+
+    }
+    /* .hiddenNav{
+        display: flex;
+        transition: 2s;
+    } */
+    .contact{
+        display: none;
+    }
+    .burger{
+        display: block;
+    }
+    .menu{
+        display: block;
+    }
+    .designs{
+        flex-direction: column;
+    }
+    
+}
+@media  (min-width: 700px) {
+    .hiddenNav{
+        display: none;
+    }
 }
