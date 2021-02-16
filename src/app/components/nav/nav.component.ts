@@ -30,20 +30,6 @@ import {
 export class NavComponent implements OnInit {
   @ViewChild("hiddenNav") hiddenNav: ElementRef;
   @ViewChild("hamburger") hamburger: ElementRef;
-  // @ViewChild("image1") image1: ElementRef;
-  // @ViewChild("image2") image2: ElementRef;
-
-  // @ViewChild("pa1") pa1: ElementRef;
-  // @ViewChild("pa2") pa2: ElementRef;
-
-
-
-
-  isIn = false;
-
-  toggle() {
-    this.isIn = !this.isIn;
-  }
 
   constructor() { }
   ngOnInit(): void {
@@ -54,34 +40,5 @@ export class NavComponent implements OnInit {
 
     // ...
   }
-  // over(num) {
-  //   console.log('f')
-  //   switch (num) {
-  //     case 1:
-  //       this.image1.nativeElement.classList.add('hide');
-  //       this.pa1.nativeElement.classList.remove('hide');
-  //       break;
-  //     case 2:
-  //       this.image2.nativeElement.classList.add('hide');
-  //       this.pa2.nativeElement.classList.remove('hide');
-  //       break;
-  //   }
 
-
-  // }
-
-  // left(num) {
-  //   switch (num) {
-  //     case 1:
-  //       this.image1.nativeElement.classList.remove('hide');
-  //       this.pa1.nativeElement.classList.add('hide');
-  //       break;
-  //     case 2:
-  //       this.image2.nativeElement.classList.remove('hide');
-  //       this.pa2.nativeElement.classList.add('hide');
-  //       break;
-  //   }
-
-
-  // }
 }
