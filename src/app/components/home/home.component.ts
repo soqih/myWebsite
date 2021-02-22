@@ -7,8 +7,8 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  @ViewChild("hiddenNav") hiddenNav: ElementRef;
-  @ViewChild("hamburger") hamburger: ElementRef;
+  // @ViewChild("hiddenNav") hiddenNav: ElementRef;
+  // @ViewChild("hamburger") hamburger: ElementRef;
 
   @ViewChild("logos") logos: ElementRef;
   @ViewChild("logoCard") logoCard: ElementRef;
@@ -26,12 +26,10 @@ export class HomeComponent implements OnInit {
   constructor() { }
   ngOnInit(): void {
   }
-  burgerClicked() {
-    this.hiddenNav.nativeElement.classList.toggle('hide');
-    this.hamburger.nativeElement.classList.toggle('is-active');
-
-    // ...
-  }
+  // burgerClicked() {
+  //   this.hiddenNav.nativeElement.classList.toggle('hide');
+  //   this.hamburger.nativeElement.classList.toggle('is-active');
+  // }
   show(a) {
     if (a === "logos") {
       this.logos.nativeElement.classList.toggle('hide');

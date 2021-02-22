@@ -1,19 +1,5 @@
-<div #hiddenNav class="hiddenNav hide">
-
-    <a class="hiddenContact" href="#">Contact</a>
-</div>
-<div class="nav">
-    <img class="logo nav-item" src="./assets/images/myLogo.svg" alt="">
-    <a class="nav-item contact" href="#">Contact</a>
-
-    <div class="burger nav-item">
-        <button #hamburger (click)='burgerClicked()' class="hamburger hamburger--collapse" type="button">
-            <span class="hamburger-box">
-                <span class="hamburger-inner"></span>
-            </span>
-        </button>
-    </div>
-</div>
+<app-top-nav>
+</app-top-nav>
 
 
 <p class="introText">Designer, Front-end Developer, and hopefully Full Stack Developer soon :) </p>
@@ -41,58 +27,69 @@
 
 </div>
 
-
 <p class="introText">My Designs</p>
 
 <div class="designs">
+
     <div class="designCard" (click)="show('logos')" #logoCard>
         <span #logoCardText>Logos</span>
-        <!-- <a #logoCardText class="hide">check it out here</a> -->
     </div>
+
     <div class="designCard" (click)="show('kufic')" #kuficCard>
         <span #kuficCardText>Square Kufic</span>
-        <!-- <a class="hide">check it out here</a> -->
     </div>
+
     <div class="designCard" (click)="show('other')" #otherCard>
         <span #otherCardText>Other</span>
-        <!-- <a class="hide">check it out here</a> -->
     </div>
+
 </div>
 
 <div #logos class="hCard logos hide ">
+
     <div class="designContainer">
         <img class="desImg" src="./assets/images/dates.svg" alt="">
     </div>
+
     <div class="designContainer">
         <img class="desImg" src="./assets/images/cinnabon.svg" alt="">
     </div>
+
     <div class="designContainer">
         <img class="desImg" src="./assets/images/khayal2.png" alt="">
     </div>
+
     <div class="designContainer">
         <img class="desImg" src="./assets/images/paki.svg" alt="">
     </div>
+
     <div class="designContainer">
         <img class="desImg" src="./assets/images/mzag.png" alt="">
     </div>
+
 </div>
 
 <div #kufic class="hCard kufic hide">
     <div class="designContainer">
         <img class="desImg" src="./assets/images/fahad.svg" alt="">
     </div>
+
     <div class="designContainer">
         <img class="desImg" src="./assets/images/harbi.svg" alt="">
     </div>
+
     <div class="designContainer">
         <img class="desImg" src="./assets/images/muath.svg" alt="">
     </div>
+
     <div class="designContainer">
         <img class="desImg" src="./assets/images/hadab.svg" alt="">
     </div>
+
     <div class="designContainer">
         <img class="desImg" src="./assets/images/lujain.svg" alt="">
     </div>
+
 </div>
 
 <div #other class="hCard other hide">
@@ -101,20 +98,9 @@
             href="https://drive.google.com/file/d/1ShAIpBMw3tfRCRsSsSsJ_Ez72lxxBChV/view?usp=sharing">Bahjah
             Chocolate Menu</a>
     </div>
-
 </div>
 
-<div class="bottomNav">
-    <a target="_blank" href="https://www.linkedin.com/in/abdullah-alsuqyah/">
-        <img class="socialMedia" src="./assets/images/linkedin.svg" alt="">
-    </a>
-    <a target="_blank" href="https://wa.me/966502172982/?text=hello%20abdullah">
-        <img class="socialMedia" src="./assets/images/whatsapp.svg" alt="">
-    </a>
-
-    <a target="_blank" href="mailto:abdullahalsuqayh@ieee.org">
-        <img class="socialMedia" src="./assets/images/email.svg" alt="">
-    </a>
 
 
-</div>
+<app-bottom-nav>
+</app-bottom-nav>
