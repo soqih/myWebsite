@@ -1,9 +1,9 @@
 <div #hiddenNav class="hiddenNav hide">
-    <a class="hiddenContact" href="#">Contact</a>
+    <a class="hiddenContact" [routerLink]= "route" >{{this.language === 'arabic' ? arabic : english}}</a>
 </div>
 <div class="nav">
     <img class="logo nav-item" src="./assets/images/myLogo.svg" alt="">
-    <a class="nav-item contact" href="#">Contact</a>
+    <a class="nav-item contact"  [routerLink]= "route"  >{{this.language === 'arabic' ? arabic : english}}</a>
 
     <div class="burger nav-item">
         <button #hamburger (click)='burgerClicked()' class="hamburger hamburger--collapse" type="button">

@@ -35,28 +35,32 @@
   .contact {
     text-decoration: none;
     color: #F2786D;
-    font-size: 1.2rem;
-    border: 2px solid #F2786D;
-    padding: 0.5rem 1rem;
-    border-radius: 2rem;
+    font-size: 1.3rem;
+    border-bottom: 2px solid #F2786D;
+    padding: 0.3rem 0rem;
+    /* border-radius: 2rem; */
     /* margin: 1rem; */
     margin-right: 15%;
+    text-align: center;
 }
 
   .hiddenContact{
     text-decoration: none;
     color: #F2786D;
-    font-size: 1.2rem;
-    border: 2px solid #F2786D;
-    padding: 0.5rem 1rem;
-    border-radius: 2rem;
+    font-size: 1.3rem;
+    border-bottom: 2px solid #F2786D;
+    padding: 0.3rem 0rem;
+
+    /* padding: 0.5rem 1rem; */
+    /* border-radius: 2rem; */
     /* display: none; */
 
 }
 
 .contact:hover , .hiddenContact:hover {
-    color: white;
-    background-color:#F2786D ;
+    /* color: white;
+    background-color:#F2786D ; */
+    font-size: 1.4rem;
     transition: 0.4s;
     cursor: pointer;
 }
@@ -70,8 +74,10 @@
 }
 .logo:hover{
     cursor: pointer;
-    opacity: 0.7;
+    /* opacity: 0.7; */
     transition: 0.6s;
+    transform: rotate(360deg);
+
 }
 .burger{
     display: none;

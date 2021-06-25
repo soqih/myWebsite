@@ -1,4 +1,5 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -23,13 +24,22 @@ export class HomeComponent implements OnInit {
   @ViewChild("otherCardText") otherCardText: ElementRef;
 
 
-  constructor() { }
+  constructor(public route: ActivatedRoute) { }
   ngOnInit(): void {
+    console.log(this.route.snapshot.routeConfig.path)
+    // if(this.route.snapshot.routeConfig.path.includes("Ar")){
+      
+    // }
   }
-  // burgerClicked() {
-  //   this.hiddenNav.nativeElement.classList.toggle('hide');
-  //   this.hamburger.nativeElement.classList.toggle('is-active');
-  // }
+
+  
+  public get language() : string {
+    if(this.route.snapshot.routeConfig.path.includes('Ar') || this.route.snapshot.routeConfig.path.includes('ar')){
+      return 'arabic';
+    }
+    return 'english'
+  }
+  
   show(a) {
     if (a === "logos") {
       this.logos.nativeElement.classList.toggle('hide');
@@ -49,6 +59,5 @@ export class HomeComponent implements OnInit {
       this.otherCard.nativeElement.classList.toggle('clicked');
       this.otherCardText.nativeElement.classList.toggle('white');
     }
-    // a.nativeElement.classList.toggle('hide');
   }
 }
