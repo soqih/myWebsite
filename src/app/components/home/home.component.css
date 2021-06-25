@@ -1,3 +1,20 @@
+.all{
+    width: inherit;
+    height: 100%;
+  
+}
+.english , .arabic{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+}
 .hCard{
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
@@ -8,19 +25,36 @@
   align-items: center;
   border-right: 1px solid  rgba(0,0,0,0.1);
   padding: 1rem;
-  margin: 1rem;
-  padding-bottom: 2rem;
+  margin: 1rem 0rem;
+  /* padding-bottom: 2rem; */
+  width: 80vw;
+  /* height: fit-content; */
+
 }
-.designContainer{
-    width: 13rem;
-    height: 13rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2rem 3rem;
+.imgs{
+    margin-top: 30px;
+    /* padding: 1rem 0rem; */
+}
+.hCard h2{
+    position: absolute;
+    /* right: 0; */
+    top: 0;
+    /* margin: 20px; */
+    padding: 15px;
+    color: #424343;
+    font-weight: 600;
+    /* width: 100%; */
+}
+.hCard .en {
+    left: 0;
+}
+.hCard .ar{
+    right: 0;
 }
 .desImg{
-    width: 100%;
+    /* width: 100%; */
+    height: 4rem;
+    margin: 2rem 2rem;
 }
 .oth{
     text-decoration: none;
@@ -37,18 +71,8 @@
     color: white;
     background-color: #F2786D;
 }
-.flex{
-    flex: 1;
-    font-size: 1.7rem;
-}
 
-.hide{
-    display: none;
-}
-.clicked{
-    background-color:#F2786D;
-    transition: 0.6s;
-}
+
 .introText{
     font-weight: 800;
     font-size: 2rem;
@@ -131,7 +155,7 @@
 }
 .speciality{
     display: flex;
-    width: 100%;
+    width: 90%;
 }
 h3{
     font-weight: 800;
@@ -150,15 +174,25 @@ a{
     .speciality{
         flex-direction: column;
     }
-   
+   .imgs{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+   }
     .designs{
         flex-direction: column;
     }
 
     .designContainer{
         margin: 2.5rem 2rem;
-        width: 10rem;
-        height: 5rem;
+        /* width: 10rem;
+        height: 5rem; */
+    }
+    .desImg{
+        /* width: 2rem;
+        height: 2rem; */
+        max-width: 200px;
     }
     .flex{
         font-size: 1rem;
