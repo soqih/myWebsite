@@ -15,6 +15,16 @@ justify-content: center;
     justify-content: center;
     align-items:center ;
 }
+.who{
+    color:#F2786D;
+    margin: 15px;
+    margin-bottom: 0;
+}
+.talk{
+    margin: 15px;
+    margin-top: 2rem;
+    line-height: 2;
+}
 .hCard{
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
@@ -31,8 +41,28 @@ justify-content: center;
   /* height: fit-content; */
 
 }
+.info{
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* align-items: center; */
+  border-right: 1px solid  rgba(0,0,0,0.1);
+  padding: 1rem;
+  margin: 3rem 0rem;
+  margin-bottom: 5.5rem;
+  width: 80vw;
+  position: relative;
+}
 .imgs{
     margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     /* padding: 1rem 0rem; */
 }
 .hCard h2{
@@ -45,10 +75,16 @@ justify-content: center;
     font-weight: 600;
     /* width: 100%; */
 }
-.hCard .en {
+ .en {
+    position: absolute;
+    /* right: 0; */
+    top: 0;
     left: 0;
 }
-.hCard .ar{
+ .ar{
+    position: absolute;
+    /* right: 0; */
+    top: 0;
     right: 0;
 }
 .desImg{
@@ -107,50 +143,9 @@ justify-content: center;
   padding-bottom: 2rem;
 }
 
-.designCard span{
-    font-size: 1.7rem;
-}
-.designCard{
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-    transition: 0.3s;
-    display: flex;
-    flex-direction: column;
-    margin: 1rem;
-    max-width: 400px;
-    min-width: 300px;
-    width: 30%;
-    height: 10rem;
-    border-radius: 0.5rem;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
-.designCard:hover{
-    background-color:#F2786D ;
-    transition: 0.6s;
-    cursor: pointer;
-}
 
-.designs{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items:center ;
-    text-align: center;    
-    width: 100%;
-}
 
-.designCard:hover span{
-    font-size: 1.9rem;
-    color: white;
-    transition: 0.6s;
-}
-.white{
-    color: white;
-    transition: 0.6s;
-}
-.card:hover{
+.card:hover , .info:hover{
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 .speciality{
