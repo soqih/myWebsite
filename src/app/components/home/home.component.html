@@ -1,0 +1,250 @@
+<div class="all">
+    <app-top-nav [language]= "language"></app-top-nav>
+
+    <div class="english" *ngIf="!this.route.snapshot.routeConfig.path.includes('Ar') && !this.route.snapshot.routeConfig.path.includes('ar')">
+        <p class="introText">UX Designer | Front-end Developer | scrum master </p>
+        <div class="info">
+            <h3 class="who">Who am I ?</h3>
+            <div class="talk">
+                My name is abdullah alsuqyah.&nbsp; a junior software engineer. <br>
+
+                I'm interested in UX, Web front-end development, and mobile apps development.
+                I want to further my knowledge in these fields to build apps with a good UI/UX
+
+            </div>
+
+        </div>
+        <div class="speciality">
+        
+            <div class="card">
+                <img class="icon" src="./assets/images/designer.svg" alt="">
+                <h2 class="specialityTitle">Designer</h2>
+                <p>UI, Logos, Graphic Design</p>
+                <br>
+                <h3 class="specialityTitle">Apps</h3>
+                <p>Illustrator, Adobe XD</p>
+            </div>
+        
+            <div class="card">
+                <img class="icon" src="./assets/images/frontend.svg" alt="">
+                <h2 class="specialityTitle">Developer</h2>
+                <br>
+                <h3 class="specialityTitle">Front-end</h3>
+                <p>HTML, CSS, Javascript, Angular</p>
+                <br><br>
+                <h3 class="specialityTitle">OOP languages</h3>
+                <p>Familiar with Java</p>
+            </div>
+        
+        </div>
+        
+        <p  
+        data-aos="fade-up"
+        data-aos-delay="50"
+        data-aos-duration="600"
+        data-aos-easing="ease-in-out"
+        data-aos-offset="250"
+         class="introText" >My Designs</p>
+    
+        
+        <div class="cards">
+            <div  class="hCard " 
+            data-aos="zoom-in-right"
+            data-aos-delay="200"
+            data-aos-duration="700"
+            data-aos-offset="350"
+            >
+            <h2 class="en">logos</h2>
+
+                <div class="imgs">
+                    <img class="desImg" src="./assets/images/dates.svg" alt="">
+                
+            
+                
+                    <img class="desImg" src="./assets/images/cinnabon.svg" alt="">
+                
+            
+                
+                    <img class="desImg" src="./assets/images/khayal2.png" alt="">
+                
+            
+                    <img class="desImg" src="./assets/images/mzag.png" alt="">
+
+                    <img class="desImg" src="./assets/images/paki.svg" alt="">
+                
+            
+                
+                </div>
+                   
+                
+            
+            </div>
+            
+            <div  class="hCard kufic" 
+            data-aos="fade-left"
+            data-aos-delay="200"
+            data-aos-duration="700"
+            data-aos-offset="350"
+            >
+            <h2 class="en">Sqaured Kufic </h2>
+            <div class="imgs">
+                    <img class="desImg" src="./assets/images/fahad.svg" alt="">
+                
+            
+                
+                    <img class="desImg" src="./assets/images/harbi.svg" alt="">
+                
+            
+                
+                    <img class="desImg" src="./assets/images/muath.svg" alt="">
+                
+            
+                    <img class="desImg" src="./assets/images/lujain.svg" alt="">
+
+                    <img class="desImg" src="./assets/images/hadab.svg" alt="">
+                
+            
+                
+            </div>
+            
+            </div>
+            
+            <div  class="hCard other" 
+            data-aos="flip-right"
+            data-aos-delay="400"
+            data-aos-duration="800"
+            data-aos-offset="200"
+            >
+                    <a class="oth" target="_blank"
+                        href="https://drive.google.com/file/d/1ShAIpBMw3tfRCRsSsSsJ_Ez72lxxBChV/view?usp=sharing">Bahjah
+                        Chocolate Menu</a>
+                
+            </div>
+        </div>
+       
+    </div>
+    
+    <div class="arabic" *ngIf="this.route.snapshot.routeConfig.path.includes('Ar') || this.route.snapshot.routeConfig.path.includes('ar')">
+        
+        <p class="introText">مصمم | مطور فرونت-اند ويب | سكرم ماستر</p>
+        <div class="info">
+            <h3 class="ar who ">من أنا؟</h3>
+            <div class="talk" style="text-align-last: center;">
+                  اسمي عبدالله الصقيه، مهندس برمجيات. &nbsp;
+                  مهتم بتجربة/واجهة المستخدم، تطوير الفرونت-اند ويب وتطوير تطبيقات الجوال.
+                  أرغب بتطوير معرفتي في هذه المجالات لبناء برامج ممتازة الواجهة والتجربة
+            </div>
+
+        </div>
+        <div class="speciality">
+        
+            <div class="card">
+                <img class="icon" src="./assets/images/designer.svg" alt="">
+                <h2 class="specialityTitle">مصمم</h2>
+                
+                <p style="text-align-last: center; line-height: 1.6;">واجهات مستخدم، شعارات، تصميم قرافيك</p>
+                <br>
+                <h3 class="specialityTitle">التطبيقات</h3>
+                
+                <p>Illustrator, Adobe XD</p>
+            </div>
+        
+            <div class="card">
+                <img class="icon" src="./assets/images/frontend.svg" alt="">
+                <h2 class="specialityTitle">مطور</h2>
+                <br>
+                <h3 class="specialityTitle">فرونت اند</h3>
+                <p>HTML, CSS, Javascript, Angular</p>
+                <br><br>
+                <h3 class="specialityTitle">لغات البرمجة الكائنية</h3>
+                <p>Java </p>
+            </div>
+        
+        </div>
+        
+        <p class="introText" class="introText"
+        data-aos="fade-up"
+        data-aos-delay="50"
+        data-aos-duration="600"
+        data-aos-easing="ease-in-out"
+        data-aos-offset="250">تصاميمي</p>
+        
+        
+        <div class="cards">
+            <div  class="hCard logos "
+            data-aos="zoom-in-right"
+                data-aos-delay="200"
+                data-aos-duration="700"
+                data-aos-offset="350"
+            >
+            <h2 class="ar">شعارات</h2>
+
+            <div class="imgs">
+
+                    <img class="desImg" src="./assets/images/dates.svg" alt="">
+                
+            
+                
+                    <img class="desImg" src="./assets/images/cinnabon.svg" alt="">
+                
+            
+                
+                    <img class="desImg" src="./assets/images/khayal2.png" alt="">
+                
+            
+                
+                    <img class="desImg" src="./assets/images/paki.svg" alt="">
+                
+            
+                
+                    <img class="desImg" src="./assets/images/mzag.png" alt="">
+                
+            </div>
+            </div>
+            
+            <div class="hCard kufic" 
+                data-aos="fade-left"
+                data-aos-delay="200"
+                data-aos-duration="700"
+                data-aos-offset="350"
+            >
+            <h2 class="ar">كوفي مربع</h2>
+            <div class="imgs">
+
+                    <img class="desImg" src="./assets/images/fahad.svg" alt="">
+                
+            
+                
+                    <img class="desImg" src="./assets/images/harbi.svg" alt="">
+                
+            
+                
+                    <img class="desImg" src="./assets/images/muath.svg" alt="">
+                
+            
+                
+                    <img class="desImg" src="./assets/images/hadab.svg" alt="">
+                
+            
+                
+                    <img class="desImg" src="./assets/images/lujain.svg" alt="">
+                
+            </div>
+            </div>
+            
+            <div class="hCard other"
+                data-aos="flip-right"
+                data-aos-delay="400"
+                data-aos-duration="800"
+                data-aos-offset="200"
+            >
+               
+                    <a class="oth" target="_blank"
+                        href="https://drive.google.com/file/d/1ShAIpBMw3tfRCRsSsSsJ_Ez72lxxBChV/view?usp=sharing">منيو بهجة شوكلت</a>
+            </div>
+        </div>
+        
+    </div>
+    
+    <app-bottom-nav></app-bottom-nav>
+</div>

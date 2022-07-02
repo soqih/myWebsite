@@ -1,0 +1,24 @@
+/* @import 'aos/dist/aos.css';  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family: 'Effra','Montserrat', sans-serif;
+}
+html,body{
+   /* justify-self: center; */
+    width: 100vw;
+    height: 100vh;
+    /* margin: 0 auto;; */
+    /* overflow: auto; */
+}
+
+
+@font-face {
+    font-family: "Effra";
+    src: url("/assets/fonts/Effra\ Regular.ttf") format("truetype");
+
+    /* src: local("Montserrat"), url("assets/fonts/Montserrat-Regular.ttf") format("truetype"); */
+}
+

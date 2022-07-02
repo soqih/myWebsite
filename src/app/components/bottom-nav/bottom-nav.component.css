@@ -1,0 +1,28 @@
+.bottomNav{
+    margin-top: 10rem;
+    display: flex;
+    /* background-color: #F2786D; */
+    width: 100%;
+    height: 5rem;
+    align-items: center;
+    justify-content: space-around;
+}
+.socialMedia{
+    width:2rem;
+    transition: 0.6s;
+}
+.socialMedia:hover{
+    width: 3rem;
+    cursor: pointer;
+}
+
+@media  (max-width: 768px) {
+    .socialMedia{
+        width:2rem;
+        transition: 0.6s;
+    }
+    .socialMedia:hover{
+        width: 2.3rem;
+        cursor: pointer;
+    }
+}
